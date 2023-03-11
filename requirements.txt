@@ -1,6 +1,5 @@
 aiohttp==3.7.4.post0
 appdirs==1.4.4
-apple-music-python==1.0.5
 async-generator==1.10
 async-timeout==3.0.1
 attrs==21.4.0
@@ -14,10 +13,7 @@ classutils==1.18.1
 configurationutil==3.7.6
 contourpy==1.0.6
 conversionutil==1.4.6
-cryptography==37.0.1
 cycler==0.11.0
-discord==1.7.3
-discord.py==1.7.3
 dominate==2.6.0
 et-xmlfile==1.1.0
 exceptiongroup==1.1.0
@@ -30,15 +26,10 @@ jsonschema==2.5.1
 kiwisolver==1.4.4
 logging-helper==1.9.0
 logging-tree==1.9
-matplotlib==3.6.2
 multidict==6.0.2
-numpy==1.22.3
-openai==0.18.1
 openpyxl==3.0.9
 outcome==1.2.0
 packaging==21.3
-pandas==1.4.2
-pandas-stubs==1.2.0.58
 Pillow==9.1.0
 pycparser==2.21
 PyJWT==2.3.0
