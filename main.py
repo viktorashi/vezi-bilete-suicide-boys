@@ -125,4 +125,7 @@ def KeepTryn():
         time.sleep(20)
 
 
-KeepTryn()
+# KeepTryn()
+while True:
+    send_text_message("I'm alive")
+    time.sleep(60)
