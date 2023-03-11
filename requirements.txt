@@ -43,10 +43,6 @@ Pillow==9.1.0
 pycparser==2.21
 PyJWT==2.3.0
 pynput==1.7.6
-pyobjc-core==9.0
-pyobjc-framework-ApplicationServices==9.0
-pyobjc-framework-Cocoa==9.0
-pyobjc-framework-Quartz==9.0
 pyparsing==3.0.9
 PyPDF2==1.26.0
 pyperclip==1.8.2
