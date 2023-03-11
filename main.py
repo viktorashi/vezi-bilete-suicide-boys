@@ -1,12 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.webdriver.chrome.service import Service
+# from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from twilio.rest import Client
 from twilio.base.exceptions import TwilioRestException
-from twilio.http.http_client import TwilioHttpClient
 import time
 import os
 from dotenv import load_dotenv
@@ -21,14 +20,16 @@ url = "https://tickets.funcode.hu/event/suicideboys-2023/pyos"
 
 
 options = webdriver.ChromeOptions()
-# options.add_argument("--no-sandbox")
+options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--no-sandbox")
 # options.add_argument('--headless')
 # options.add_argument('--disable-gpu') 
 # options.headless = True
 options.add_argument('--headless=new')#ASTA E BUN yayy
-options.add_argument("--user-data-dir=/Users/viktorashi/Library/Application Support/Google/Chrome/")
-options.add_argument('--profile-directory=Profile 1')
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+# options.add_argument("--user-data-dir=/Users/viktorashi/Library/Application Support/Google/Chrome/")
+# options.add_argument('--profile-directory=Profile 1')
+driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=options) 
 # driver = webdriver.Chrome(CHROMEDRIVER_PATH, options=options)
 
 
