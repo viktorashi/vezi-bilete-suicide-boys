@@ -1,0 +1,15 @@
+{
+  "name": "Bielete suicide boyss",
+  "description": "This app does one little thing, and does it well.",
+  "keywords": [
+    "productivity"
+  ],
+  "repository": "https://github.com/iVictory2004/vezi-bilete-suicide-boys",
+  "image": "heroku/python",
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python.git"
+    }
+  ]
+}
