@@ -74,7 +74,7 @@ EC.presence_of_element_located(('xpath', '/html/body/article/article/div/section
         return True
     
     #these are error messages that appear when the tickets are not available
-    possible_messages = ["This category is currently unavailable", "This category is currently unavailable", "Please select another category.", "Unable to reserve 1 tickets", 'Unable to reserve 1 tickets for $uicideboy$ present Gray Day Europe Tour 2023 Standing - PL2', 'Jelenleg ez a kategória nem elérhető']
+    possible_messages = ["This category is currently unavailable", "This category is currently unavailable", "Please select another category.", "Unable to reserve 1 tickets", 'Unable to reserve 1 tickets for $uicideboy$ present Gray Day Europe Tour 2023 Standing - PL2', 'Jelenleg ez a kategória nem elerheto']
 
     #check if any of the messages from the list are in the notify.text
     if any(x in notify.text for x in possible_messages):
